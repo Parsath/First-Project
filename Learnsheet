@@ -22,6 +22,10 @@ Day 3: 18/02/2020 09h24
 
     Step 4: ( Skipping Bootstrap, going back for it later.)
         Learning Parallax 
+    Note: 
+        *Learned about the different existing Parallax styles.
+        *Learned about the existence of Sass
+        *Learned to use Sass
 
 
 
@@ -36,3 +40,4 @@ References:
     https://www.w3schools.com/jquery/jquery_animate.asp
     
     https://youtu.be/STwoa-9jxi0
+    https://www.youtube.com/watch?v=WTZpNAbz3jg
