@@ -963,7 +963,7 @@ body {
 
 h1 {
   color: #ccc;
-  weight: 300;
+  height: 300;
 }
 
 figure {
@@ -984,7 +984,7 @@ img {
 .bird-box {
   position: relative;
   height: 600px;
-  background-image: url(/images/bird-bg.jpg);
+  background-image: url(../images/bird-bg.jpg);
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
@@ -994,7 +994,7 @@ img {
 .logo {
   height: 100px;
   width: 100%;
-  background-image: url(/images/black-bird-logo.svg);
+  background-image: url(../images/black-bird-logo.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;

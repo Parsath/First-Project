@@ -1,0 +1,98 @@
+
+<!-- saved from url=(0118)https://www.freecodecamp.org/learn/front-end-libraries/bootstrap/use-responsive-design-with-bootstrap-fluid-containers -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="">--><base href=".">
+  <script>
+    window.__frameId = 'fcc-main-frame';
+    window.onerror = function(msg) {
+      var string = msg.toLowerCase();
+      if (string.includes('script error')) {
+        msg = 'Build error, open your browser console to learn more.';
+      }
+      console.log(msg);
+      return true;
+    };
+    document.addEventListener('click', function(e) {
+      let element = e.target;
+      while(element && element.nodeName !== 'A') {
+        element = element.parentElement;
+      }
+      if (element) {
+        const href = element.getAttribute('href');
+        if (!href || href[0] !== '#' && !href.match(/^https?:\/\//)) {
+          e.preventDefault();
+        }
+      }
+    }, false);
+    document.addEventListener('submit', function(e) {
+      const action = e.target.getAttribute('action');
+      if (!action || !action.match(/https?:\/\//)) {
+        e.preventDefault();
+      }
+    }, false);
+  </script>
+<link href="./normalize.min.css" rel="stylesheet"><link href="./bootstrap.css" rel="stylesheet"><script src="./frame-runner.a8eacec985ff33f24600.js.téléchargement" type="text/javascript"></script></head>
+  <body id="display-body" style="margin:8px;">
+    <!-- fcc-start-source -->
+      <link href="./css" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div>
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p>Click here for <a href="https://www.freecodecamp.org/learn/front-end-libraries/bootstrap/use-responsive-design-with-bootstrap-fluid-containers#">cat photos</a>.</p>
+
+<a href="https://www.freecodecamp.org/learn/front-end-libraries/bootstrap/use-responsive-design-with-bootstrap-fluid-containers#"><img class="smaller-image thick-green-border" src="./fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+<p>Things cats love:</p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+<form action="https://www.freecodecamp.org/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality"> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Crazy</label>
+  <input type="text" placeholder="cat photo URL" required="">
+  <button type="submit">Submit</button>
+</form>
+
+</div>
+
+<!--fcc-->
+
+    <!-- fcc-end-source -->
+  </body></html>
