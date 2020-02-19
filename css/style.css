@@ -4,42 +4,51 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.figures {
-  position: relative;
-  height: 1000px;
-  background-image: url(../img/figures.png);
-  background-size: auto 1000px;
-  background-position: top center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  height: 1200px;
   overflow: hidden;
 }
 
-.emptybackground {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 40% 60%;
-      grid-template-rows: 40% 60%;
+.figures {
+  height: 800px;
+  background-image: url(../img/figures.png);
+  background-size: auto 500px;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .row1 {
-  grid-area: firstrow;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 2;
+  height: 800px;
+  background-attachment: fixed;
   background-color: #ffd948;
+  overflow: hidden;
 }
 
 .row2 {
-  grid-area: secondrow;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
+  height: 350px;
+  width: 100%;
+  background-attachment: fixed;
   background-color: #ffd42d;
+  background-size: auto auto;
+}
+
+.logo {
+  color: #fff;
+  text-align: center;
+  text-color: #fff;
+  font-size: 50px;
+  position: absolute;
+  height: 800px;
+  top: 45%;
+  left: 40%;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+@media (max-width: 797px) {
+  body-padding-left: 0px;
+  body-padding-right: 0px;
 }
 /*# sourceMappingURL=style.css.map */

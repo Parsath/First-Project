@@ -3,37 +3,53 @@ body
     height: 5000px
 
 header
-    display: flex
+    height: 1200px
+    overflow: hidden
 
 .figures
-    position: relative
-    height: 1000px
+    height: 800px
     background:
         image: url(../img/figures.png)
-        size: auto 1000px
+        size: auto 500px
         position: top center
         attachment: fixed
         repeat: no-repeat
-    overflow: hidden
 
-.emptybackground
-    display: grid
-    grid-template-rows: 40% 60%
     
 .row1
-    grid-area: firstrow
-    grid-row-start: 1
-    grid-row-end: 2
+    height: 800px
     background:
+        attachment: fixed
         color: #ffd948
+    overflow: hidden
 
 .row2
-    grid-area: secondrow
-    grid-row-start: 2
-    grid-row-end: 3
+    height: 350px
+    width: 100%
     background:
+        attachment: fixed
         color: #ffd42d
- 
+        size: auto auto
+
+.logo
+    color: #fff
+    text:
+        align: center
+        color: #fff
+    font:
+        size: 50px
+    position: absolute
+    height: 800px
+    top: 45%
+    left: 40%
+
+.container-fluid
+    padding: 0px
+
+@media (max-width: 797px)
+    body:
+        padding-left: 0px
+        padding-right: 0px
 
 
     

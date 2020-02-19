@@ -1005,7 +1005,7 @@ img {
 .fore-bird {
   width: 960px;
   height: 733px;
-  background-image: url(/images/fore-bird.png);
+  background-image: url(../images/fore-bird.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   position: absolute;
@@ -1017,7 +1017,7 @@ img {
 .back-bird {
   width: 960px;
   height: 298px;
-  background-image: url(/images/back-bird.png);
+  background-image: url(../images/back-bird.png);
   background-repeat: no-repeat;
   background-position: top left;
   position: absolute;
