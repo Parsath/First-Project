@@ -3,6 +3,12 @@ body {
   height: 5000px;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .figures {
   position: relative;
   height: 1000px;
@@ -12,5 +18,28 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.emptybackground {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 60%;
+      grid-template-rows: 40% 60%;
+}
+
+.row1 {
+  grid-area: firstrow;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #ffd948;
+}
+
+.row2 {
+  grid-area: secondrow;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #ffd42d;
 }
 /*# sourceMappingURL=style.css.map */

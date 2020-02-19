@@ -2,6 +2,9 @@ body
     font-family: sectra
     height: 5000px
 
+header
+    display: flex
+
 .figures
     position: relative
     height: 1000px
@@ -12,5 +15,25 @@ body
         attachment: fixed
         repeat: no-repeat
     overflow: hidden
+
+.emptybackground
+    display: grid
+    grid-template-rows: 40% 60%
+    
+.row1
+    grid-area: firstrow
+    grid-row-start: 1
+    grid-row-end: 2
+    background:
+        color: #ffd948
+
+.row2
+    grid-area: secondrow
+    grid-row-start: 2
+    grid-row-end: 3
+    background:
+        color: #ffd42d
+ 
+
 
     
