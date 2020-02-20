@@ -33,14 +33,25 @@ header {
 }
 
 .logo {
+  height: 800px;
+  width: 1900px;
+  background-image: url(../img/logo.png);
+  background-position: top center;
+  background-size: auto 220px;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 170px;
+}
+
+.textlogo {
+  height: 300px;
   color: #fff;
-  text-align: center;
-  text-color: #fff;
   font-size: 50px;
+  background-attachment: fixed;
   position: absolute;
   height: 800px;
-  top: 45%;
-  left: 40%;
+  top: 27%;
+  left: 43%;
 }
 
 .container-fluid {
