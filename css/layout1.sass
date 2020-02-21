@@ -3,17 +3,18 @@ body
     height: 5000px
 
 header
-    height: 1200px
+    height: 800px
     overflow: hidden
 
 .figures
-    height: 800px
+    height: 100%
+    width: 100%
     background:
         image: url(../img/figures.png)
         size: auto 500px
         position: top center
-        attachment: fixed
         repeat: no-repeat
+    position: relative
 
     
 .row1
@@ -24,6 +25,14 @@ header
     overflow: hidden
 
 .row2
+    position: relative
+    height: 800px
+    width: 100%
+    background:
+        attachment: fixed
+
+
+.row3
     height: 350px
     width: 100%
     background:
@@ -32,29 +41,15 @@ header
         size: auto auto
 
 .logo
-    height: 800px
-    width: 1900px
+    height: 100%
+    width: 100%
     background:
         image: url(../img/logo.png)
         position: top center
         size: auto 220px
         repeat: no-repeat
-        attachment: fixed
-    position: absolute
-    margin-top: 170px
-    
-
-.textlogo
-    height: 300px
-    color: #fff
-    font:
-        size: 50px
-    background:
-        attachment: fixed
-    position: absolute
-    height: 800px
-    top: 27%
-    left: 43%
+    position: relative
+    top: 15%
 
 .container-fluid
     padding: 0px
@@ -64,5 +59,26 @@ header
         padding-left: 0px
         padding-right: 0px
 
+@media only screen and (max-width : 768px)
+    .figures
+        background:
+            size: auto 450px
+        top: 5%
+    .logo
+        background:
+            size: auto 180px
+        
+@media only screen and (max-width : 320px)
+    .figures
+        background:
+            size: auto 300px
+        top: 18%
+    .logo
+        background:
+            size: auto 140px
+        top: 8%
+        
+        
 
+    
     

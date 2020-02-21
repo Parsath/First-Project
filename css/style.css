@@ -4,17 +4,18 @@ body {
 }
 
 header {
-  height: 1200px;
+  height: 800px;
   overflow: hidden;
 }
 
 .figures {
-  height: 800px;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/figures.png);
   background-size: auto 500px;
   background-position: top center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .row1 {
@@ -25,6 +26,13 @@ header {
 }
 
 .row2 {
+  position: relative;
+  height: 800px;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.row3 {
   height: 350px;
   width: 100%;
   background-attachment: fixed;
@@ -33,25 +41,14 @@ header {
 }
 
 .logo {
-  height: 800px;
-  width: 1900px;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/logo.png);
   background-position: top center;
   background-size: auto 220px;
   background-repeat: no-repeat;
-  position: absolute;
-  margin-top: 170px;
-}
-
-.textlogo {
-  height: 300px;
-  color: #fff;
-  font-size: 50px;
-  background-attachment: fixed;
-  position: absolute;
-  height: 800px;
-  top: 27%;
-  left: 43%;
+  position: relative;
+  top: 15%;
 }
 
 .container-fluid {
@@ -61,5 +58,26 @@ header {
 @media (max-width: 797px) {
   body-padding-left: 0px;
   body-padding-right: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .figures {
+    background-size: auto 450px;
+    top: 5%;
+  }
+  .logo {
+    background-size: auto 180px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .figures {
+    background-size: auto 300px;
+    top: 18%;
+  }
+  .logo {
+    background-size: auto 140px;
+    top: 8%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
