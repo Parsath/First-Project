@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  height: 800px;
+  height: 1300px;
   overflow: hidden;
 }
 
@@ -16,10 +16,11 @@ header {
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
+  top: 12%;
 }
 
 .row1 {
-  height: 800px;
+  height: 972px;
   background-attachment: fixed;
   background-color: #ffd948;
   overflow: hidden;
@@ -29,13 +30,11 @@ header {
   position: relative;
   height: 800px;
   width: 100%;
-  background-attachment: fixed;
 }
 
 .row3 {
-  height: 350px;
+  height: 450px;
   width: 100%;
-  background-attachment: fixed;
   background-color: #ffd42d;
   background-size: auto auto;
 }
@@ -63,17 +62,20 @@ header {
 @media only screen and (max-width: 768px) {
   .figures {
     background-size: auto 450px;
-    top: 5%;
+    top: 17%;
   }
   .logo {
     background-size: auto 180px;
+  }
+  .row1 {
+    height: 1024px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .figures {
     background-size: auto 300px;
-    top: 18%;
+    top: 31%;
   }
   .logo {
     background-size: auto 140px;
