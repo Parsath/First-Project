@@ -14,6 +14,9 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, -'+ wScroll /40 +'%)'
   });
 
+
+
+  /*
   if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.2)) {
 
     $('.clothes-pics figure').each(function(i){
@@ -24,5 +27,6 @@ $(window).scroll(function(){
     });
 
   }
+  */
 
 });
