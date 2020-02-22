@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
 body {
-  font-family: sectra;
+  font-family: 'Montserrat', sans-serif;
   height: 5000px;
 }
 
@@ -8,15 +9,91 @@ header {
   overflow: hidden;
 }
 
+.nav__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 3%;
+}
+
+.nav__links {
+  list-style: none;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.nav__links li {
+  color: black;
+  display: inline-block;
+  padding: 0px 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a {
+  color: black;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: white;
+  background-image: url("../img/bacon.svg");
+  background-transform: scale(0.2);
+  background-repeat: repeat-x;
+}
+
+button {
+  padding: 9px 25px;
+  color: black;
+  border: none;
+  background-color: #ffd42d;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: white;
+}
+
+.nike {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+li, a, button {
+  font-weight: 500;
+  font-size: 13px;
+  font-color: #edf0f1;
+  font-text-decoration: none;
+}
+
 .figures {
   height: 100%;
   width: 100%;
   background-image: url(../img/figures.png);
-  background-size: auto 500px;
+  background-size: auto 700px;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  top: 12%;
+  top: 0%;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.figures.is-dissapearing {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .row1 {
