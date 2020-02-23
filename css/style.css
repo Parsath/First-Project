@@ -10,6 +10,7 @@ header {
 }
 
 .nav__bar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +18,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 30px 3%;
+  z-index: 100;
 }
 
 .nav__links {
@@ -78,11 +80,11 @@ li, a, button {
   height: 100%;
   width: 100%;
   background-image: url(../img/figures.png);
-  background-size: auto 700px;
+  background-size: auto 900px;
   background-position: top center;
   background-repeat: no-repeat;
   position: relative;
-  top: 0%;
+  top: -22%;
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -121,10 +123,10 @@ li, a, button {
   width: 100%;
   background-image: url(../img/logo.png);
   background-position: top center;
-  background-size: auto 220px;
+  background-size: auto 320px;
   background-repeat: no-repeat;
   position: relative;
-  top: 15%;
+  top: 35%;
 }
 
 .container-fluid {
@@ -138,11 +140,11 @@ li, a, button {
 
 @media only screen and (max-width: 768px) {
   .figures {
-    background-size: auto 450px;
-    top: 17%;
+    background-size: auto 800px;
+    top: -10%;
   }
   .logo {
-    background-size: auto 180px;
+    background-size: auto 300px;
   }
   .row1 {
     height: 1024px;
@@ -151,12 +153,12 @@ li, a, button {
 
 @media only screen and (max-width: 320px) {
   .figures {
-    background-size: auto 300px;
-    top: 31%;
+    background-size: auto 500px;
+    top: -10%;
   }
   .logo {
-    background-size: auto 140px;
-    top: 8%;
+    background-size: auto 200px;
+    top: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */

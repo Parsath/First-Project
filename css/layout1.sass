@@ -9,10 +9,12 @@ header
     overflow: hidden
 
 .nav__bar
+    position: relative
     display: flex
     justify-content: space-between
     //align-items: center
     padding: 30px 3% 
+    z-index: 100
 
 .nav__links
     list-style: none
@@ -62,11 +64,11 @@ li, a, button
     width: 100%
     background:
         image: url(../img/figures.png)
-        size: auto 700px
+        size: auto 900px
         position: top center
         repeat: no-repeat
     position: relative
-    top: 0%
+    top: -22%
     opacity: 1
     transform: scale(1.0)
     transition: all 0.5s ease
@@ -102,10 +104,10 @@ li, a, button
     background:
         image: url(../img/logo.png)
         position: top center
-        size: auto 220px
+        size: auto 320px
         repeat: no-repeat
     position: relative
-    top: 15%
+    top: 35%
 
 
 
@@ -120,23 +122,23 @@ li, a, button
 @media only screen and (max-width : 768px)
     .figures
         background:
-            size: auto 450px
-        top: 17%
+            size: auto 800px
+        top: -10%
     .logo
         background:
-            size: auto 180px
+            size: auto 300px
     .row1
         height: 1024px
         
 @media only screen and (max-width : 320px)
     .figures
         background:
-            size: auto 300px
-        top: 31%
+            size: auto 500px
+        top: -10%
     .logo
         background:
-            size: auto 140px
-        top: 8%
+            size: auto 200px
+        top: 15%
         
         
 

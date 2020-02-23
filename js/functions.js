@@ -4,10 +4,11 @@ $(window).scroll(function(){
   
   $('.row1').css({
     'transform' : 'translate(0px, '+ wScroll /10.3 +'%)'
-  });
+  });  
+  
 
   $('.logo').css({
-    'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
+    'transform' : 'translate(0px, -'+ wScroll /6 +'%)'
   });
 
   if(wScroll > 200){
