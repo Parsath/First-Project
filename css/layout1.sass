@@ -5,7 +5,7 @@ body
     height: 5000px
 
 header
-    height: 1300px
+    height: 5000px
     overflow: hidden
 
 .nav__bar
@@ -13,6 +13,7 @@ header
     //display: flex
     //justify-content: space-between
     //align-items: center
+    top: 2%
     padding: 30px 3%
     z-index: 100
 
@@ -45,7 +46,7 @@ header
 button
     position: absolute
     left: 92%
-    top: -30%
+    top: -500%
     padding: 9px 25px
     color: black
     border: none
@@ -56,7 +57,7 @@ button
     &.is-showing
         top: 30%
     &.got-out
-        top: -30%
+        top: -500%
 
 button:hover
     color: white
@@ -86,7 +87,7 @@ li, a, button
         position: top center
         repeat: no-repeat
     position: relative
-    top: -22%
+    top: -15%
     opacity: 0
     transform: scale(1.1)
 
@@ -102,11 +103,23 @@ li, a, button
 
     
 .row1
-    height: 972px
-    background:
-        attachment: fixed
-        color: #ffd948
-    overflow: hidden
+    height: 5000px
+    &.first-page
+        height: 5000px
+        background:
+            attachment: fixed
+            color: #ffd948
+        overflow: hidden
+        transition: background-color 1s ease
+        &.core
+            height: 5000px
+            background: 
+                attachment: fixed
+                color: #ffd42d
+            opacity: 1
+            overflow: hidden
+            transition: background-color 1s ease
+
 
 .row2
     position: relative
@@ -131,8 +144,6 @@ li, a, button
         repeat: no-repeat
     position: relative
     top: 35%
-
-
 
 .container-fluid
     padding: 0px

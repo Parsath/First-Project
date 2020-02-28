@@ -2,8 +2,8 @@ $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
   
-  $('.row1').css({
-    'transform' : 'translate(0px, '+ wScroll /10.3 +'%)'
+  $('.first-page').css({
+    'transform' : 'translate(0px, '+ wScroll /50 +'%)'
   });  
 
   $('.logo').css({
@@ -24,9 +24,17 @@ $(window).scroll(function(){
 
     $('button').addClass('got-out');
 
+    $('.row1').addClass('core');
+    /*setTimeout(function(){
+      $('.row1').addClass('core');
+    }, 300);*/
+
   }
 
   if(wScroll < $('header').offset().top + 1){
+
+    $('.row1').removeClass('core');
+
     $('.figures').removeClass('is-dissapearing');
 
     $('.nav__links li').each(function(i){
