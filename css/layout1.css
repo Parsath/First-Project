@@ -11,29 +11,34 @@ header {
 
 .nav__bar {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 30px 3%;
   z-index: 100;
 }
 
 .nav__links {
+  position: absolute;
+  top: 35%;
   list-style: none;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-left: 37%;
 }
 
 .nav__links li {
   color: black;
   display: inline-block;
   padding: 0px 20px;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  opacity: 0;
+}
+
+.nav__links li.is-landing {
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  opacity: 1;
+}
+
+.nav__links li.is-unlanding {
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  opacity: 0;
 }
 
 .nav__links li a {
@@ -50,13 +55,24 @@ header {
 }
 
 button {
+  position: absolute;
+  left: 92%;
+  top: -30%;
   padding: 9px 25px;
   color: black;
   border: none;
   background-color: #ffd42d;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+}
+
+button.is-showing {
+  top: 30%;
+}
+
+button.got-out {
+  top: -30%;
 }
 
 button:hover {
@@ -64,9 +80,13 @@ button:hover {
 }
 
 .nike {
+  position: fixed;
   height: 50px;
   width: auto;
   cursor: pointer;
+  left: 5%;
+  top: 5%;
+  z-index: 200;
 }
 
 li, a, button {
@@ -85,14 +105,22 @@ li, a, button {
   background-repeat: no-repeat;
   position: relative;
   top: -22%;
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.figures.is-appearing {
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .figures.is-dissapearing {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   opacity: 0;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

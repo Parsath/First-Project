@@ -10,20 +10,28 @@ header
 
 .nav__bar
     position: relative
-    display: flex
-    justify-content: space-between
+    //display: flex
+    //justify-content: space-between
     //align-items: center
-    padding: 30px 3% 
+    padding: 30px 3%
     z-index: 100
 
 .nav__links
+    position: absolute
+    top: 35%
     list-style: none
-    align-self: center
+    margin-left: 37%
     li 
         color: black
         display: inline-block
         padding: 0px 20px
-        transition: all 0.3s ease 0s
+        opacity: 0
+        &.is-landing
+            transition: all 1s ease 0s
+            opacity: 1
+        &.is-unlanding
+            transition: all 0.4s ease 0s
+            opacity: 0
         a
             color: black
             transition: all 0.3s ease 0s
@@ -35,22 +43,32 @@ header
                 repeat: repeat-x
 
 button
+    position: absolute
+    left: 92%
+    top: -30%
     padding: 9px 25px
     color: black
     border: none
     background:
         color: #ffd42d
     cursor: pointer
-    transition: all 0.3s ease 0s
+    transition: all 1s ease 0s
+    &.is-showing
+        top: 30%
+    &.got-out
+        top: -30%
 
 button:hover
     color: white
 
-
 .nike
+    position: fixed
     height: 50px
     width: auto
     cursor: pointer
+    left: 5%
+    top: 5%
+    z-index: 200
 
 li, a, button
     font:
@@ -69,11 +87,16 @@ li, a, button
         repeat: no-repeat
     position: relative
     top: -22%
-    opacity: 1
-    transform: scale(1.0)
-    transition: all 0.5s ease
+    opacity: 0
+    transform: scale(1.1)
+
+    &.is-appearing
+        transition: all 1.5s ease
+        opacity: 1
+        transform: scale(1.0)
 
     &.is-dissapearing
+        transition: all 0.5s ease
         opacity: 0
         transform: scale(0.9)
 
