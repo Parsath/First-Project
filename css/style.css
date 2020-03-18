@@ -224,7 +224,7 @@ li, a, button {
     display: block;
   }
   .nav__links {
-    display: block;
+    display: none;
     position: static;
     margin: 0;
     padding: 0;

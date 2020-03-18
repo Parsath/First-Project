@@ -64,7 +64,8 @@ $(window).load(function(){
 
 });
 
-$(".nav_dropdown").click(function() {
+$(".nav_dropdown").click(function(){
+  alert('nav_dropdown clicked!');
   $(".nav__links").slideToggle(function() {
   });
 });
