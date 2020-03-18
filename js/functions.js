@@ -63,3 +63,8 @@ $(window).load(function(){
   });
 
 });
+
+$(".nav_dropdown").click(function() {
+  $(".nav__links").slideToggle(function() {
+  });
+});

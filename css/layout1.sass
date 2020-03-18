@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
 
+/// BODY & HEADER ///
+
 body 
     font-family: 'Montserrat', sans-serif
     height: 5000px
@@ -7,6 +9,35 @@ body
 header
     height: 5000px
     overflow: hidden
+
+/// First and principal DIV ///
+
+.row1
+    height: 5000px
+    &.first-page
+        height: 5000px
+        background:
+            attachment: fixed
+            color: #ffd948
+        overflow: hidden
+        transition: background-color 1s ease
+        &.core
+            height: 5000px
+            background: 
+                attachment: fixed
+                color: #ffd42d
+            opacity: 1
+            overflow: hidden
+            transition: background-color 1s ease
+
+/// Third div child ///
+
+.row2
+    position: relative
+    height: 800px
+    width: 100%
+
+/// NAV BAR ///
 
 .nav__bar
     position: relative
@@ -23,7 +54,7 @@ header
     list-style: none
     width: 700px
     left: 50%
-    transform: translate( -210px, 0%)
+    transform: translate( -195px, 0%)
     li 
         color: black
         display: inline-block
@@ -45,6 +76,15 @@ header
                 transform: scale(0.2)
                 repeat: repeat-x
 
+.nav_dropdown
+    position: relative
+    font-size: 24px
+    cursor: pointer
+    padding: 0.6em
+    display: none
+    left: 80%
+    
+
 button
     position: absolute
     left: 88%
@@ -64,6 +104,15 @@ button
 button:hover
     color: white
 
+li, a, button
+    font:
+        weight: 500
+        size: 13px
+        color: #edf0f1
+        text-decoration: none
+
+/// LOGO Setting ///
+
 .nike
     position: fixed
     height: 50px
@@ -73,12 +122,7 @@ button:hover
     top: 5%
     z-index: 200
 
-li, a, button
-    font:
-        weight: 500
-        size: 13px
-        color: #edf0f1
-        text-decoration: none
+/// Figures Image ///
 
 .figures
     height: 100%
@@ -103,38 +147,7 @@ li, a, button
         opacity: 0
         transform: scale(0.9)
 
-    
-.row1
-    height: 5000px
-    &.first-page
-        height: 5000px
-        background:
-            attachment: fixed
-            color: #ffd948
-        overflow: hidden
-        transition: background-color 1s ease
-        &.core
-            height: 5000px
-            background: 
-                attachment: fixed
-                color: #ffd42d
-            opacity: 1
-            overflow: hidden
-            transition: background-color 1s ease
-
-
-.row2
-    position: relative
-    height: 800px
-    width: 100%
-
-
-.row3
-    height: 450px
-    width: 100%
-    background:
-        color: #ffd42d
-        size: auto auto
+/// Center Logo ///
 
 .logo
     height: 100%
@@ -147,6 +160,17 @@ li, a, button
     position: relative
     top: 35%
 
+/// Second USELESS div child ///
+
+.row3
+    height: 450px
+    width: 100%
+    background:
+        color: #ffd42d
+        size: auto auto
+
+/// Making borders go away for Bootstrap Responsive Design ///
+
 .container-fluid
     padding: 0px
 
@@ -154,6 +178,8 @@ li, a, button
     body:
         padding-left: 0px
         padding-right: 0px
+
+/// Responsive Design ///
 
 @media only screen and (max-width : 768px)
     .figures
@@ -178,6 +204,18 @@ li, a, button
         background:
             size: auto 200px
         top: 15%
+    .nav_dropdown
+        display: block
+    .nav__links
+        display: none
+        position: static
+        margin: 0
+        padding: 0
+        list-style-type: none
+        li
+            display: block
+    .cta
+        display: none
         
         
 
