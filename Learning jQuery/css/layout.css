@@ -14,9 +14,30 @@ header {
   margin-bottom: 10px;
 }
 
+.myClass {
+  color: blue;
+  background: black;
+}
+
 #container {
   width: 90%;
   margin: auto;
   padding: 10px;
+}
+
+#box {
+  background: #333;
+  color: #fff;
+  width: 500px;
+  height: 90px;
+  padding: 40px;
+  text-align: center;
+}
+
+#box2 {
+  background: red;
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
 /*# sourceMappingURL=layout.css.map */
