@@ -96,6 +96,70 @@ header {
   left: 80%;
 }
 
+.modal {
+  z-index: 200000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  height: 90%;
+  background-color: #ffffff;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 black;
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 black;
+  -webkit-animation-name: modalopen;
+          animation-name: modalopen;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  padding: 0;
+}
+
+.modal-footer {
+  display: block;
+  background-color: #F7F7F7;
+  height: 40%;
+  width: 100%;
+  border: none;
+  padding: 0;
+}
+
+.modal-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  padding: 30px;
+}
+
+.closeBtn {
+  color: #cccccc;
+  position: relative;
+  right: -90%;
+  font-size: 30px;
+}
+
+.closeBtn:hover {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 button {
   position: absolute;
   left: 88%;
@@ -225,16 +289,45 @@ li, a, button {
   }
   .nav__links {
     display: none;
-    position: static;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
   }
-  .nav__links li {
+  .nav_modal {
+    position: static;
+    padding-left: 40%;
+    list-style-type: none;
+    line-height: 3em;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .nav_modal li {
     display: block;
+    font-size: 4em;
+    font-weight: 500;
+  }
+  .nav_modal li a {
+    color: black;
+    font-size: 0.3em;
+    font-weight: bold;
   }
   .cta {
     display: none;
+  }
+}
+
+@-webkit-keyframes modalopen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modalopen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

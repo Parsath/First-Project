@@ -167,7 +167,7 @@ $.each(newArr , function(i, val){
 
 
 
-/////////////// EFFET & ANIMATION ///////////////
+/////////////// EFFECT & ANIMATION ///////////////
 
 
 

@@ -64,8 +64,25 @@ $(window).load(function(){
 
 });
 
-$(".nav_dropdown").click(function(){
-  alert('nav_dropdown clicked!');
-  $(".nav__links").slideToggle(function() {
-  });
-});
+// Get Modal Element
+var modal = document.getElementById('simpleModal');
+// Get open modal button
+var modalBtn = document.getElementById('modalBtn');
+// Get close modal button
+var closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+// Listen for click
+modalBtn.addEventListener('click',openModal);
+
+// Function to open modal
+function openModal(){
+  modal.style.display = 'block';
+}
+
+// Listen for close click
+closeBtn.addEventListener('click',closeModal);
+
+// Function to open modal
+function closeModal(){
+  modal.style.display = 'none';
+}

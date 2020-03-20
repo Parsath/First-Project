@@ -83,7 +83,61 @@ header
     padding: 0.6em
     display: none
     left: 80%
-    
+
+.modal
+    z-index: 200000
+    position: fixed
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    overflow: auto
+    background: 
+        color: rgba(0, 0, 0, 0.5)
+        
+.modal-content
+    height: 90%
+    background:
+        color: #ffffff
+    margin: 5% auto
+    padding: 20px
+    width: 90%
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgb(0,0,0.17)
+    animation-name: modalopen
+    animation-duration: 0.3s
+    padding: 0
+
+.modal-footer
+    display: block
+    background-color: #F7F7F7
+    height: 40%
+    width: 100%
+    border: none
+    padding: 0
+
+.modal-title
+    text-align: center
+    margin-top: 30px
+    font-size: 15px
+
+.icons
+    display: flex
+    justify-content: space-around
+    margin: auto
+    padding: 30px
+
+.closeBtn
+    color: #cccccc
+    position: relative
+    right: -90%
+    font-size: 30px
+
+.closeBtn:hover
+    color: #000000
+    text-decoration: none
+    cursor: pointer
+
+
 
 button
     position: absolute
@@ -160,7 +214,7 @@ li, a, button
     position: relative
     top: 35%
 
-/// Second USELESS div child ///
+/// Second div child ///
 
 .row3
     height: 450px
@@ -208,16 +262,27 @@ li, a, button
         display: block
     .nav__links
         display: none
+    .nav_modal
         position: static
-        margin: 0
-        padding: 0
+        padding-left: 40%
         list-style-type: none
+        line-height: 3em
+        box-sizing: content-box
         li
             display: block
+            font-size: 4em
+            font-weight: 500
+            a
+                color: black
+                font-size: 0.3em
+                font-weight: bold
     .cta
         display: none
         
-        
-
+@keyframes modalopen
+    0%
+        opacity: 0
+    100%
+        opacity: 1
     
     
