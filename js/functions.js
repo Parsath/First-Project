@@ -1,11 +1,4 @@
 $(window).scroll(function(){
-
-  /*if((this).scrollTop() > 100){
-    
-  } 
-  else{
-    $('.topBtn').fadeOut();
-  }*/
   
   var wScroll = $(this).scrollTop();
   
@@ -15,6 +8,10 @@ $(window).scroll(function(){
 
   $('.logo').css({
     'transform' : 'translate(0px, -'+ wScroll /6 +'%)'
+  });
+
+  $('.intro').css({
+    'transform' : 'translate(0px, -'+ wScroll  +'%)'
   });
   console.log(wScroll);
 

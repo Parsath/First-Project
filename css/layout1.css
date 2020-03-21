@@ -19,8 +19,8 @@ header {
   background-attachment: fixed;
   background-color: #ffd948;
   overflow: hidden;
-  -webkit-transition: background-color 1s ease;
-  transition: background-color 1s ease;
+  -webkit-transition: background-color 1000ms ease;
+  transition: background-color 1000ms ease;
 }
 
 .row1.first-page.core {
@@ -29,8 +29,8 @@ header {
   background-color: #ffd42d;
   opacity: 1;
   overflow: hidden;
-  -webkit-transition: background-color 1s ease;
-  transition: background-color 1s ease;
+  -webkit-transition: background-color 1000ms ease;
+  transition: background-color 1000ms ease;
 }
 
 .intro {
@@ -39,14 +39,14 @@ header {
   opacity: 0;
   top: 16%;
   text-align: center;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
 }
 
 .intro.appear {
   opacity: 1;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: opacity 2s ease;
+  transition: opacity 2s ease;
 }
 
 .highlight {
@@ -63,8 +63,8 @@ header {
 
 .highlight.fadein {
   opacity: 1;
-  -webkit-transition: all 4s ease;
-  transition: all 4s ease;
+  -webkit-transition: opacity 4s ease;
+  transition: opacity 4s ease;
 }
 
 .partnerPara {
@@ -107,21 +107,21 @@ header {
 }
 
 .nav__links li.is-landing {
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+  -webkit-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
   opacity: 1;
 }
 
 .nav__links li.is-unlanding {
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  -webkit-transition: opacity 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s;
   opacity: 0;
 }
 
 .nav__links li a {
   color: black;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .nav__links li a:hover {
@@ -246,15 +246,21 @@ li, a, button {
   width: 50px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
 }
 
 .topBtn.fade {
   top: 30px;
   opacity: 1;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition-duration: 700ms;
+          transition-duration: 700ms;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 .topBtn:hover {
@@ -286,16 +292,24 @@ li, a, button {
 }
 
 .figures.is-appearing {
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
+  -webkit-transition-duration: 1500ms;
+          transition-duration: 1500ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
 .figures.is-dissapearing {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
   opacity: 0;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);

@@ -21,7 +21,7 @@ header
             attachment: fixed
             color: #ffd948
         overflow: hidden
-        transition: background-color 1s ease
+        transition: background-color 1000ms ease
         &.core
             height: 2500px
             background: 
@@ -29,7 +29,7 @@ header
                 color: #ffd42d
             opacity: 1
             overflow: hidden
-            transition: background-color 1s ease
+            transition: background-color 1000ms ease
 
 /// Second Part of the front Page ///
 
@@ -39,10 +39,10 @@ header
     opacity: 0
     top: 16%
     text-align: center
-    transition: all 2s ease
+    transition: opacity 2s ease
     &.appear
         opacity: 1
-        transition: all 2s ease
+        transition: opacity 2s ease
 
 .highlight
     width: 40%
@@ -57,7 +57,7 @@ header
     margin-bottom: 10px
     &.fadein
         opacity: 1
-        transition: all 4s ease
+        transition: opacity 4s ease
 
 
 .partnerPara
@@ -100,14 +100,14 @@ header
         padding: 0px 20px
         opacity: 0
         &.is-landing
-            transition: all 1s ease 0s
+            transition: opacity 1s ease 0s
             opacity: 1
         &.is-unlanding
-            transition: all 0.4s ease 0s
+            transition: opacity 0.4s ease 0s
             opacity: 0
         a
             color: black
-            transition: all 0.3s ease 0s
+            transition: color 0.3s ease 0s
         a:hover
             color: white
             background:
@@ -216,11 +216,14 @@ li, a, button
     width: 50px
     height: 50px
     background-color: transparentize(#000, 1 )
-    transition: all 1s ease
+    transition-duration: 1000ms
+    transition-property: top, opacity
     &.fade
         top: 30px
         opacity: 1
-        transition: all 1s ease
+        transition-duration: 700ms
+        transition-property: top, opacity
+        transition-timing-function: ease-out
 
 .topBtn:hover
     cursor: pointer
@@ -253,12 +256,14 @@ li, a, button
     transform: scale(1.1)
 
     &.is-appearing
-        transition: all 1.5s ease
+        transition-duration: 1500ms
+        transition-property: opacity, transform
         opacity: 1
         transform: scale(1.0)
 
     &.is-dissapearing
-        transition: all 0.5s ease
+        transition-duration: 500ms
+        transition-property: opacity, transform
         opacity: 0
         transform: scale(0.9)
 
