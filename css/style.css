@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 body {
   font-family: 'Montserrat', sans-serif;
-  height: 5000px;
+  height: 2500px;
 }
 
 header {
-  height: 5000px;
+  height: 2500px;
   overflow: hidden;
 }
 
 .row1 {
-  height: 5000px;
+  height: 2500px;
 }
 
 .row1.first-page {
-  height: 5000px;
+  height: 2500px;
   background-attachment: fixed;
   background-color: #ffd948;
   overflow: hidden;
@@ -23,13 +24,56 @@ header {
 }
 
 .row1.first-page.core {
-  height: 5000px;
+  height: 2500px;
   background-attachment: fixed;
   background-color: #ffd42d;
   opacity: 1;
   overflow: hidden;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
+}
+
+.intro {
+  position: relative;
+  margin: auto;
+  opacity: 0;
+  top: 16%;
+  text-align: center;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.intro.appear {
+  opacity: 1;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.highlight {
+  width: 40%;
+  margin: auto;
+  line-height: 1.2em;
+  opacity: 0;
+  font-weight: bold;
+  font-size: 39px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -0.04em;
+  margin-bottom: 10px;
+}
+
+.highlight.fadein {
+  opacity: 1;
+  -webkit-transition: all 4s ease;
+  transition: all 4s ease;
+}
+
+.partnerPara {
+  width: 35%;
+  margin: auto;
+  line-height: 1.7em;
+  letter-spacing: -0.02em;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .row2 {
@@ -192,6 +236,31 @@ li, a, button {
   font-text-decoration: none;
 }
 
+.topBtn {
+  opacity: 0;
+  z-index: 200;
+  position: fixed;
+  top: -500px;
+  right: 10%;
+  font-size: 3em;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.topBtn.fade {
+  top: 30px;
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.topBtn:hover {
+  cursor: pointer;
+}
+
 .nike {
   position: fixed;
   height: 50px;
@@ -259,6 +328,27 @@ li, a, button {
   body-padding-right: 0px;
 }
 
+.nav_modal {
+  position: static;
+  padding-left: 45%;
+  list-style-type: none;
+  line-height: 3em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.nav_modal li {
+  display: block;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.nav_modal li a {
+  color: black;
+  font-size: 0.3em;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
   .figures {
     background-size: auto 800px;
@@ -275,6 +365,12 @@ li, a, button {
   }
 }
 
+@media only screen and (min-width: 320px) {
+  .modal {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .figures {
     background-size: auto 500px;
@@ -284,6 +380,9 @@ li, a, button {
     background-size: auto 200px;
     top: 15%;
   }
+  .topBtn {
+    display: none;
+  }
   .nav_dropdown {
     display: block;
   }
@@ -291,22 +390,7 @@ li, a, button {
     display: none;
   }
   .nav_modal {
-    position: static;
     padding-left: 40%;
-    list-style-type: none;
-    line-height: 3em;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-  }
-  .nav_modal li {
-    display: block;
-    font-size: 4em;
-    font-weight: 500;
-  }
-  .nav_modal li a {
-    color: black;
-    font-size: 0.3em;
-    font-weight: bold;
   }
   .cta {
     display: none;

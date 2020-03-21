@@ -1,34 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
 /// BODY & HEADER ///
 
 body 
     font-family: 'Montserrat', sans-serif
-    height: 5000px
+    height: 2500px
 
 header
-    height: 5000px
+    height: 2500px
     overflow: hidden
 
 /// First and principal DIV ///
 
 .row1
-    height: 5000px
+    height: 2500px
     &.first-page
-        height: 5000px
+        height: 2500px
         background:
             attachment: fixed
             color: #ffd948
         overflow: hidden
         transition: background-color 1s ease
         &.core
-            height: 5000px
+            height: 2500px
             background: 
                 attachment: fixed
                 color: #ffd42d
             opacity: 1
             overflow: hidden
             transition: background-color 1s ease
+
+/// Second Part of the front Page ///
+
+.intro
+    position: relative
+    margin: auto
+    opacity: 0
+    top: 16%
+    text-align: center
+    transition: all 2s ease
+    &.appear
+        opacity: 1
+        transition: all 2s ease
+
+.highlight
+    width: 40%
+    margin: auto
+    line-height: 1.2em
+    opacity: 0
+    font:
+        weight: bold
+        size: 39px
+        family: 'Oswald', sans-serif
+    letter-spacing: -0.04em
+    margin-bottom: 10px
+    &.fadein
+        opacity: 1
+        transition: all 4s ease
+
+
+.partnerPara
+    width: 35%
+    margin: auto
+    line-height: 1.7em
+    letter-spacing: -0.02em
+    font:
+        size: 16px
+        family: 'Oswald', sans-serif
 
 /// Third div child ///
 
@@ -165,6 +204,28 @@ li, a, button
         color: #edf0f1
         text-decoration: none
 
+/// BACK TO TOP BUTTON /////I
+
+.topBtn
+    opacity: 0
+    z-index: 200
+    position: fixed
+    top: -500px
+    right: 10%
+    font-size: 3em
+    width: 50px
+    height: 50px
+    background-color: transparentize(#000, 1 )
+    transition: all 1s ease
+    &.fade
+        top: 30px
+        opacity: 1
+        transition: all 1s ease
+
+.topBtn:hover
+    cursor: pointer
+
+
 /// LOGO Setting ///
 
 .nike
@@ -233,6 +294,22 @@ li, a, button
         padding-left: 0px
         padding-right: 0px
 
+
+.nav_modal
+    position: static
+    padding-left: 45%
+    list-style-type: none
+    line-height: 3em
+    box-sizing: content-box
+    li
+        display: block
+        font-size: 4em
+        font-weight: 500
+        a
+            color: black
+            font-size: 0.3em
+            font-weight: bold
+
 /// Responsive Design ///
 
 @media only screen and (max-width : 768px)
@@ -246,8 +323,11 @@ li, a, button
     .row1
         height: 1024px
     button
-        left: 85%
+        left: 85%        
 
+@media only screen and (min-width : 320px)
+    .modal
+        display: none
         
 @media only screen and (max-width : 320px)
     .figures
@@ -258,24 +338,14 @@ li, a, button
         background:
             size: auto 200px
         top: 15%
+    .topBtn
+        display: none
     .nav_dropdown
         display: block
     .nav__links
         display: none
     .nav_modal
-        position: static
         padding-left: 40%
-        list-style-type: none
-        line-height: 3em
-        box-sizing: content-box
-        li
-            display: block
-            font-size: 4em
-            font-weight: 500
-            a
-                color: black
-                font-size: 0.3em
-                font-weight: bold
     .cta
         display: none
         
