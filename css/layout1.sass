@@ -39,10 +39,10 @@ header
     opacity: 0
     top: 16%
     text-align: center
-    transition: opacity 2s ease
+    transition: opacity 1500ms ease
     &.appear
         opacity: 1
-        transition: opacity 2s ease
+        transition: opacity 1500ms ease
 
 .highlight
     width: 40%
@@ -57,7 +57,7 @@ header
     margin-bottom: 10px
     &.fadein
         opacity: 1
-        transition: opacity 4s ease
+        transition: opacity 2500ms ease-out
 
 
 .partnerPara
@@ -65,9 +65,58 @@ header
     margin: auto
     line-height: 1.7em
     letter-spacing: -0.02em
+    opacity: 0
     font:
         size: 16px
         family: 'Oswald', sans-serif
+    &.paraFade
+        opacity: 1
+        transition: opacity 3000ms ease-out
+
+/// Third Part of the front page /// 
+
+.recent-work
+    position: relative
+    width: 100%
+    height: 800px
+    background: #ffc728
+    top: 51%
+
+.fillingDiv
+    z-index: 200
+    float: right
+    width: 50%
+    height: 100%
+    right: 50%
+    background: #ffd42d
+
+.skewingDiv
+    position: absolute
+    height: 100%
+    width: 100%
+    background: #ffc728
+    transform: skewY(0deg)
+    &.workSkew
+        position: absolute
+        animation: skewThisShit 1000ms ease 0s 1
+        animation-fill-mode: forwards
+    &.workUnSkew
+        animation: unSkewThisShit 1000ms ease 0s 1
+        animation-fill-mode: forwards
+
+@keyframes skewThisShit
+    0%
+        transform: skewY(0deg)
+    100%
+        transform: skewY(20deg)
+
+@keyframes unSkewThisShit
+    0%
+        transform: skewY(20deg)
+    100%
+        transform: skewY(0deg)
+
+
 
 /// Third div child ///
 
@@ -279,6 +328,9 @@ li, a, button
         repeat: no-repeat
     position: relative
     top: 35%
+    transition-property: transform
+    transition-duration: 500ms
+    transition-timing-function: ease-out
 
 /// Second div child ///
 
