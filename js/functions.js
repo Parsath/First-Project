@@ -18,6 +18,12 @@ $(window).scroll(function(){
     'transform' : 'translate(0px, -'+ (wScroll+420)  +'px)'
   });
 
+  $('.workContent').css({
+    'transform' : 'translate(0px, -'+ (wScroll+1320)  +'px)'
+  });
+
+  
+
   console.log(wScroll);
 
   if(wScroll > 100){
@@ -89,6 +95,9 @@ $(window).scroll(function(){
 
 
 $(window).load(function(){
+  
+  $('.skewingDiv').removeClass('workSkew');
+  $('.skewingDiv').addClass('workUnSkew');
 
   $('button').addClass('is-showing');
 
@@ -125,8 +134,14 @@ function closeModal(){
   modal.style.display = 'none';
 }
 
+$(".topBtn").click(function(){
+  $('html, body').animate({scrollTop: 0}, 800);
+});
 
-
-  $(".topBtn").click(function(){
-    $('html, body').animate({scrollTop: 0}, 800);
-  });
+$(".box-arrow-link").hover(function(){
+  $(this).removeClass('mouseOut');
+  $(this).toggleClass('mouseIn');
+  }, function(){
+    $(this).removeClass('mouseIn');
+    $(this).toggleClass('mouseOut');
+});
