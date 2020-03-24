@@ -644,6 +644,27 @@ header {
   font-size: 15px;
 }
 
+.nav_modal {
+  position: static;
+  padding-left: 45%;
+  list-style-type: none;
+  line-height: 3em;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.nav_modal li {
+  display: block;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.nav_modal li a {
+  color: black;
+  font-size: 0.3em;
+  font-weight: bold;
+}
+
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,32 +834,177 @@ li, a, button {
   body-padding-right: 0px;
 }
 
-.nav_modal {
-  position: static;
-  padding-left: 45%;
-  list-style-type: none;
-  line-height: 3em;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
-.nav_modal li {
-  display: block;
-  font-size: 4em;
-  font-weight: 500;
-}
-
-.nav_modal li a {
-  color: black;
-  font-size: 0.3em;
-  font-weight: bold;
-}
-
 footer {
   position: relative;
   background-color: #f1f5f5;
   height: 500px;
   bottom: 300px;
+  overflow: hidden;
+}
+
+.footers-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  bottom: 0%;
+  padding: 15px 3% 16px;
+}
+
+.footer-description {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  line-height: 1.2em;
+  font-weight: normal;
+  font-size: 0.7em;
+  letter-spacing: -0.04em;
+  padding: auto;
+}
+
+.icons-footer {
+  font-size: 1.2em;
+  padding: auto;
+  line-height: 1.2em;
+}
+
+.logo-footer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 100%;
+  background-image: url(../img/logo.png);
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 650ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  transition: 650ms cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.logo-footer.logo-footer-in {
+  -webkit-animation: footer-logo-animate 650ms cubic-bezier(0.52, 0.01, 0.16, 1);
+          animation: footer-logo-animate 650ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.logo-footer.logo-footer-out {
+  -webkit-animation: footer-logo-animate-out 650ms cubic-bezier(0.52, 0.01, 0.16, 1);
+          animation: footer-logo-animate-out 650ms cubic-bezier(0.52, 0.01, 0.16, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+@-webkit-keyframes footer-logo-animate {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes footer-logo-animate {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes footer-logo-animate-out {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes footer-logo-animate-out {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.cool-hand {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 110%;
+  background-image: url(../img/statue-hand.png);
+  background-size: auto 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 950ms cubic-bezier(1, 0, 0, 1);
+  transition: 950ms cubic-bezier(1, 0, 0, 1);
+}
+
+.cool-hand.cool-hand-in {
+  -webkit-animation: cool-hand-animate 950ms cubic-bezier(1, 0, 0, 1);
+          animation: cool-hand-animate 950ms cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+.cool-hand.cool-hand-out {
+  -webkit-animation: cool-hand-animate-out 950ms cubic-bezier(1, 0, 0, 1);
+          animation: cool-hand-animate-out 950ms cubic-bezier(1, 0, 0, 1);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+@-webkit-keyframes cool-hand-animate {
+  0% {
+    top: 110%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes cool-hand-animate {
+  0% {
+    top: 110%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@-webkit-keyframes cool-hand-animate-out {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+@keyframes cool-hand-animate-out {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 110%;
+  }
 }
 
 @media only screen and (max-width: 768px) {

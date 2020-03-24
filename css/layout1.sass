@@ -402,6 +402,21 @@ header
     margin-top: 30px
     font-size: 15px
 
+.nav_modal
+    position: static
+    padding-left: 45%
+    list-style-type: none
+    line-height: 3em
+    box-sizing: content-box
+    li
+        display: block
+        font-size: 4em
+        font-weight: 500
+        a
+            color: black
+            font-size: 0.3em
+            font-weight: bold
+
 .icons
     display: flex
     justify-content: space-around
@@ -545,22 +560,6 @@ li, a, button
         padding-left: 0px
         padding-right: 0px
 
-
-.nav_modal
-    position: static
-    padding-left: 45%
-    list-style-type: none
-    line-height: 3em
-    box-sizing: content-box
-    li
-        display: block
-        font-size: 4em
-        font-weight: 500
-        a
-            color: black
-            font-size: 0.3em
-            font-weight: bold
-
 /// Footer ///
 
 footer
@@ -568,6 +567,98 @@ footer
     background-color: #f1f5f5
     height: 500px
     bottom: 300px
+    overflow: hidden
+
+.footers-footer
+    display: flex
+    justify-content: space-between
+    position: absolute
+    height: 10%
+    width: 100%
+    background-color: #fff
+    bottom: 0%
+    padding: 15px 3% 16px
+
+.footer-description
+    font-family: 'Oswald', sans-serif
+    font-style: normal
+    line-height: 1.2em
+    font-weight: normal
+    font-size: 0.7em
+    letter-spacing: -0.04em 
+    padding: auto   
+
+.icons-footer
+    font-size: 1.2em
+    padding: auto
+    line-height: 1.2em
+
+.logo-footer
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 100%
+    background:
+        image: url(../img/logo.png)
+        size: auto 300px
+        repeat: no-repeat
+        position: center
+    transition: 650ms cubic-bezier(0.52, 0.01, 0.16, 1)
+    &.logo-footer-in
+        animation: footer-logo-animate 650ms cubic-bezier(0.52, 0.01, 0.16, 1)
+        animation-fill-mode: forwards
+        animation-delay: 200ms
+    &.logo-footer-out
+        animation: footer-logo-animate-out 650ms cubic-bezier(0.52, 0.01, 0.16, 1)
+        animation-fill-mode: forwards
+        animation-delay: 200ms
+
+
+@keyframes footer-logo-animate
+    0%
+        top: 100%
+    100%
+        top: 0%
+
+@keyframes footer-logo-animate-out
+    0%
+        top: 0%
+    100%
+        top: 100%
+
+.cool-hand
+    position: absolute
+    height: 100%
+    width: 100%
+    top: 110%
+    background:
+        image: url(../img/statue-hand.png)
+        size: auto 500px
+        repeat: no-repeat
+        position: center
+    transition: 950ms cubic-bezier(1, 0, 0, 1)
+    &.cool-hand-in
+        animation: cool-hand-animate 950ms cubic-bezier(1, 0, 0, 1)
+        animation-fill-mode: forwards
+        animation-delay: 250ms
+    &.cool-hand-out
+        animation: cool-hand-animate-out 950ms cubic-bezier(1, 0, 0, 1)
+        animation-fill-mode: forwards
+        animation-delay: 250ms
+
+
+@keyframes cool-hand-animate
+    0%
+        top: 110%
+    100%
+        top: 0%
+
+@keyframes cool-hand-animate-out
+    0%
+        top: 0%
+    100%
+        top: 110%
+
 
 /// Responsive Design ///
 

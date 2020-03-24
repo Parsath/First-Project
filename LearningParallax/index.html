@@ -1,5 +1,6 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/functions.js"></script>
+<script src="js/parallax.js"></script>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,10 +13,10 @@
     <link rel="icon" type="image/png" href="images/back-bird.png">
   </head>
   <body>
-    <header class="bird-box">
-      <div class="back-bird"></div>
-      <div class="logo"></div>
-      <div class="fore-bird"></div>
+    <header class="bird-box" id="scene">
+      <div data-depth="0.03" class="back-bird"></div>
+      <div data-depth="0.9" class="logo"></div>
+      <div data-depth="0.03" class="fore-bird"></div>
     </header>
     <section class="content">
       <article>
@@ -43,5 +44,10 @@
       </article>
       <div style="height: 2000px"></div>
     </section>
+    <div class="trying-parallax">
+      <ul id="scene">
+        <li data-depth="0.5"><img src="../images/back-bird.png" alt="image" class="layer"></li>
+      </ul>
+    </div>
   </body>
 </html>

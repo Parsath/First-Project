@@ -1,3 +1,5 @@
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
 $(window).scroll(function(){
 
   var wScroll = $(this).scrollTop();
@@ -15,8 +17,6 @@ $(window).scroll(function(){
   });
 
 
-
-  /*
   if(wScroll > $('.clothes-pics').offset().top - ($(window).height() / 1.2)) {
 
     $('.clothes-pics figure').each(function(i){
@@ -27,6 +27,12 @@ $(window).scroll(function(){
     });
 
   }
-  */
 
+});
+
+
+$(window).load(function(){
+
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene);
 });

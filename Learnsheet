@@ -369,7 +369,16 @@ Hours Worked until now:
 
 
 
---
+Day 20: 24/03/2020 16h54
+
+    STEP 4 IN PROGRESS
+
+    Note:
+        *Footer Complete, now, there's only the preloader and the parallax animation to go
+        *Parallax.js doesn't work on this project fold, I don't know why but it simply doesn't. I'm gonna try and do the mousemovement effect differently
+        *(Hours of actual work: 2h44)
+
+Stopping time: 24/03/2020 20h41
 
 
 
@@ -399,3 +408,8 @@ References:
 
     Step 10 reference:
         https://www.youtube.com/watch?v=6QGOhCZLdhs
+
+    CSS Animation:
+        https://www.youtube.com/watch?v=8kK-cA99SA0
+        https://www.youtube.com/watch?v=f1WMjDx4snI
+        https://www.youtube.com/watch?v=GeuNIOuIEDA

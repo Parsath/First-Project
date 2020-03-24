@@ -1025,6 +1025,12 @@ img {
   margin-left: -480px;
 }
 
+.trying-parallax {
+  height: 500px;
+  width: 100%;
+  background-color: rgba(255, 192, 203, 0.3);
+}
+
 .clothes-pics figure {
   margin-bottom: 20px;
   position: relative;
